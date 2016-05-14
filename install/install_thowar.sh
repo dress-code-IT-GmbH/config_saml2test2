@@ -74,4 +74,10 @@ cd saml2test2
 python setup.py install
 )
 
+git clone git@github.com:thomaswar/saml2test2_tests_examples_idp1.test.wpv.portalverbund.at.git
+
+
+
+
+
 echo "install script finished"
