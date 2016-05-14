@@ -6,7 +6,7 @@ else
 	exit
 fi
 
-pip install --upgrade pip
+# pip install --upgrade pip
 
 pyvenv-3.4 saml2test2_34-env
 source saml2test2_34-env/bin/activate
@@ -64,6 +64,12 @@ python setup.py install
 git clone git@github.com:thomaswar/saml2test.git
 (
 cd saml2test
+python setup.py install
+)
+
+git clone git@github.com:thomaswar/saml2test2.git
+(
+cd saml2test2
 python setup.py install
 )
 
