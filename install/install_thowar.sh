@@ -97,7 +97,7 @@ python setup.py install
 
 
 repourl=git@github.com:thomaswar/saml2test2_tests_examples_idp1.test.wpv.portalverbund.at.git
-repodir=saml2test2_tests_examples_idp1.test.wpv.portalverbund.at.git
+repodir=saml2test2_tests_examples_idp1.test.wpv.portalverbund.at
 get_or_update_repo
 
 
