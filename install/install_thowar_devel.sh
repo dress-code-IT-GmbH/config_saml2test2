@@ -77,7 +77,7 @@ repodir=aatest
 get_or_update_repo
 (
 cd aatest
-git checkout bugfixing
+git checkout bugfixing01
 python setup.py install
 )
 
