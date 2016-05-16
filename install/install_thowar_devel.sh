@@ -30,6 +30,8 @@ pip install 'requests >= 1.0.0'
 pip install 'future'
 pip install 'paste'
 pip install 'zope.interface'
+pip install 'Cython'
+pip install 'lxml'
 
 #***
 # pysaml2 wants us to have repoze.who == 1.0.16 because some examples
