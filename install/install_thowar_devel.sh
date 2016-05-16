@@ -1,6 +1,5 @@
 #!/bin/sh
 # installs developer branches
-
 if [ $# -eq 1 ] ; then
 	cd $1
 else
@@ -8,6 +7,15 @@ else
 	echo "This script needs a target directory to avoid writing to the wrong place by accident"
 	exit
 fi
+
+get_or_update_repo() {
+    if [ -e $repodir ] ; then
+        cd $repodir && git pull && cd -    # already cloned
+    else
+        mkdir -p $repodir
+        git clone $repourl $repodir        # first time
+    fi
+}
 
 # pip install --upgrade pip
 
@@ -34,7 +42,9 @@ pip install pyasn1
 pip install mako
 pip install python-memcached
 
-git clone https://github.com/mehcode/python-xmlsec.git
+repourl=https://github.com/mehcode/python-xmlsec.git
+repodir=python-xmlsec
+get_or_update_repo
 (
 cd python-xmlsec/
 python setup.py install
@@ -51,13 +61,18 @@ pip install cherrypy
 # this are our "patchy" repos
 #
 
-git clone git@github.com:thomaswar/pysaml2.git
+repourl=git@github.com:thomaswar/pysaml2.git
+repodir=pysaml2
+get_or_update_repo
+
 (
 cd pysaml2
 python setup.py install
 )
 
-git clone git@github.com:thomaswar/aatest.git
+repourl=git@github.com:thomaswar/aatest.git
+repodir=aatest
+get_or_update_repo
 (
 cd aatest
 git checkout bugfixing
@@ -71,14 +86,19 @@ python setup.py install
 #python setup.py install
 #)
 
-git clone git@github.com:thomaswar/saml2test2.git
+repourl=git@github.com:thomaswar/saml2test2.git
+repodir=saml2test2
+get_or_update_repo
 (
 cd saml2test2
 git checkout playground01
 python setup.py install
 )
 
-git clone git@github.com:thomaswar/saml2test2_tests_examples_idp1.test.wpv.portalverbund.at.git
+
+repourl=git@github.com:thomaswar/saml2test2_tests_examples_idp1.test.wpv.portalverbund.at.git
+repodir=saml2test2_tests_examples_idp1.test.wpv.portalverbund.at.git
+get_or_update_repo
 
 
 
