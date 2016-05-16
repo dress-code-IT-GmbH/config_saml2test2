@@ -1,3 +1,7 @@
 Ways to install saml2test2
 
-install_thowar.sh installs saml2test2 using the thowar development forks
+install_thowar.sh installs saml2test2 using the thowar development forks master
+branches
+
+install_thowar_devel.sh installs saml2test using the (hopefully) most actual
+bleeding-edge development forks (non-master) branches
