@@ -62,11 +62,11 @@ python setup.py install
 )
 
 
-git clone git@github.com:thomaswar/saml2test.git
-(
-cd saml2test
-python setup.py install
-)
+#git clone git@github.com:thomaswar/saml2test.git
+#(
+#cd saml2test
+#python setup.py install
+#)
 
 git clone git@github.com:thomaswar/saml2test2.git
 (
