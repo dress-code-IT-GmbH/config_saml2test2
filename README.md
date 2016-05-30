@@ -30,7 +30,7 @@ bleeding-edge development forks (non-master) branches.
 This should grow into a list of ready-to-use configuration packages where you can test your setup or
 start configuration.
 
-* [test.wpv.portalverbund.at](https://github.com/thomaswar/saml2test2_tests_examples_idp1.test.wpv.portalverbund.at)
+* [test.wpv.portalverbund.at](https://github.com/thomaswar/saml2test2_cnf_examples_test.wpv.portalverbund.at)
 
 ## Something is not working?
 
