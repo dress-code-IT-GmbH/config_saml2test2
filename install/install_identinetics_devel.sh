@@ -77,6 +77,7 @@ repodir=aatest
 get_or_update_repo
 (
 cd aatest
+git checkout bugfixing02
 python setup.py install
 )
 
@@ -87,17 +88,18 @@ python setup.py install
 #python setup.py install
 #)
 
-repourl=git@github.com:thomaswar/saml2test2.git
+repourl=git@github.com:identinetics/saml2test2.git
 repodir=saml2test2
 get_or_update_repo
 (
 cd saml2test2
+git checkout playground01
 python setup.py install
 )
 
 
-repourl=git@github.com:thomaswar/saml2test2_tests_examples_idp1.test.wpv.portalverbund.at.git
-repodir=saml2test2_tests_examples_idp1.test.wpv.portalverbund.at
+repourl=git@github.com:identinetics/saml2test2_cnf_examples_test.wpv.portalverbund.at.git
+repodir=saml2test2_cnf_examples_test.wpv.portalverbund.at
 get_or_update_repo
 
 
