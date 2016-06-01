@@ -77,7 +77,7 @@ repodir=aatest
 get_or_update_repo
 (
 cd aatest
-git checkout bugfixing02
+git checkout devel
 python setup.py install
 )
 
@@ -93,7 +93,7 @@ repodir=saml2test2
 get_or_update_repo
 (
 cd saml2test2
-git checkout playground01
+git checkout devel
 python setup.py install
 )
 
