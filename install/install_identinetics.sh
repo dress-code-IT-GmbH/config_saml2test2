@@ -63,7 +63,7 @@ pip install cherrypy
 # this are our "patchy" repos
 #
 
-repourl=git@github.com:identinetics/pysaml2.git
+repourl=git@github.com:rohe/pysaml2.git
 repodir=pysaml2
 get_or_update_repo
 
