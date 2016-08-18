@@ -63,7 +63,7 @@ pip install cherrypy
 # this are our "patchy" repos
 #
 
-repourl=git@github.com:thomaswar/pysaml2.git
+repourl=git@github.com:identinetics/pysaml2.git
 repodir=pysaml2
 get_or_update_repo
 
@@ -72,7 +72,7 @@ cd pysaml2
 python setup.py install
 )
 
-repourl=git@github.com:thomaswar/aatest.git
+repourl=git@github.com:identinetics/aatest.git
 repodir=aatest
 get_or_update_repo
 (
